@@ -79,6 +79,47 @@ body {
   padding-right: 30px;
   position: relative;
 }
+.row,	/*change to row-lead*/
+.row-portrait,
+.row-landscape {
+	background: #cae4db; 	/* sky blue*/
+ 	padding: 10px 0 30px 0;
+  	max-width: 100%;		
+	display: flex;
+	justify-content: space-around;
+  	align-items: center;
+  	flex-wrap: wrap; 
+}
+.row {
+	flex-direction: column;
+} 
+.col-grid {
+	background: #cae4db; 	/* sky blue*/
+	display: flex;
+	max-width: 100%;	
+	justify-content: center;
+}
+.about-left-col {
+ 	flex: 66.66%;
+ 	padding-left: 30px;		
+ 	align-items: top;
+}
+.about-right-col {
+	padding-left: 50px;	
+	flex: 33.33%;	
+	align-items: top;
+}
+.contact-left-col {
+ 	flex: 70%;
+ 	padding-top: 30px;
+ 	padding-left: 70px;	
+ 	align-items: flex-start;	
+}
+.contact-right-col {
+	flex: 30%;	
+	padding-left: 0;	
+	align-items: baseline;
+}
 
 /*
   ========================================
@@ -98,42 +139,6 @@ body {
   clear: both;
   *zoom: 1;
 }
-
-/*
-  ========================================
-  Rows/Columns
-  ========================================
-*/
-
-.row,	/*change to row-lead*/
-.row-portrait,
-.row-landscape {
-	background: #cae4db; 	/* sky blue*/
- 	padding: 10px 0 30px 0;
-  	max-width: 100%;		
-	display: flex;
-	justify-content: space-around;
-  	align-items: center;
-  	flex-wrap: wrap; 
-}
-.row {
-	flex-direction: column;
-} 
-.col {
-	background: #cae4db; 	/* sky blue*/
-	display: flex;
-	max-width: 100%;	
-	flex-wrap: wrap;
-	justify-content: flex-start;
-  	align-items: center;
-}
-.left-col {
- 	flex: 1;
- 	margin-right: 200px;		
-}
-.right-col {
-	flex: 1;	
-}
  		
 /*
   ========================================
@@ -141,34 +146,38 @@ body {
   ========================================
 */
 
-h1, h3, h4, h5, p {
+h1, h2, h3, h4, p {
   margin-bottom: 12px;
 }
-h1, p {
-	color: #00303f; /* cerulean blue */
-}
-h2, h3, h4 {
-  color: #dcae1d; /* honey yellow */
-}
 h1 {
-  font-size: 40px;
-  line-height: 44px;
+	color: #00303f; /* cerulean blue */
+  	font-size: 40px;
+  	line-height: 44px;
+  	font-weight: 400;
 }
 h2 {
-  font-size: 32px;
-  line-height: 44px;
+  	font-size: 32px;
+  	line-height: 44px;
+  	font-weight: 300px;
+  	color: #dcae1d; /* honey yellow */
 }
 h3 {
-  font-size: 26px;
+  	font-size: 24px;
+  	font-weight: 300;
+  	line-height: 18px;
+  	color: #00303f; /* cerulean blue */
 }
 h4 {
-  font-size: 18px;
+	color: #dcae1d; /* honey yellow */
+  	font-size: 18px;
+  	text-transform: uppercase;
+  	font-weight: 300;
 }
-h5 {
-  color: #a9b2b9; /* light grey */
-  font-size: 14px;
-  font-weight: 400;
-  text-transform: uppercase;
+p {
+	color: #00303f; /* cerulean blue */
+	font-size: 17px;
+	font-weight: 300;
+  	line-height: 30px; 	
 }
 strong {
   font-weight: 400;
@@ -188,23 +197,7 @@ cite, em {
   	text-align: center;
 }
 .lead h1 {
-	font-size: 40px;
-	font-weight: 500;
-	color: #00303f; /* cerulean blue */
 	margin-bottom: 2px;
-}
-.lead h2 {
-	font-size: 32px;
-	font-weight: 300;
-	color: #dcae1d; /* honey yellow */
-	margin-bottom: 2px;
-}
-.lead p,
-.lead li {
-  	font-size: 21px;
-  	font-weight: 340;
-  	line-height: 32px;
-  	color: #00303f;
 }
 
 /*
@@ -219,9 +212,6 @@ a {
 }
 a:hover {
 	color: #dcae1d; /*honey yellow*/
-}
-p a {
-	border-bottom: 1px solid #dfe2e5; /*what does this do*/
 }
 .primary-header a,
 .primary-footer a {
@@ -241,7 +231,7 @@ p a {
 .btn {
   border-radius: 10px;
   display: inline-block;
-  margin: 0;
+  margin-top: 0;
   color: #00303f; /*text color cerulean blue*/
   cursor: pointer;
   font-weight: 500;
@@ -334,8 +324,6 @@ p a {
   	border-bottom: 10px solid #7a9d96; /*misty blue*/
 }
 
-
-
 /*
   ========================================
   Primary header
@@ -346,15 +334,16 @@ p a {
   	border-top: 4px solid #7a9d96; /* misty blue */ 
   	padding: 20px 0 0 0;
   	float: left;
-  	font-size: 48px;
-  	line-height: 44px;
-  	font-weight: 300;
+  	font-size: 48px;		/* changed h1 properties */
+  	font-weight: 300;		/* changed h1 properties */
   	letter-spacing: .5px;
   	text-transform: uppercase;
 }
 .tagline {
- 	margin: 36px 0 28px 0;
+ 	margin: 36px 0 36px 0; /* move tagline down, move tagline left, move nav menu down, move tagline right */
   	text-align: right;
+  	color: #dcae1d; /*honey yellow*/ 	/* changed h3 color property */
+  	font-size: 34px; 					/* changed h3 font-size property */
 }
 .primary-nav {
   	font-size: 14px;
@@ -392,7 +381,7 @@ p a {
 }
 .nav li {
 	display: inline-block;
-	margin: 0 10px;
+	margin: 0 10px; /* top/bottom space, in-between space */
 	vertical-align: top;
 }
 .nav li:last-child {
@@ -410,7 +399,7 @@ p a {
 	border: solid 1px black;
 	max-width: 100%;
 } 
-.row-portrait img { 	/*if I set this to 400px then four items appear on the first row*/
+.row-portrait img { 	
 	height: 320px;
 }
 .row-landscape img {
@@ -443,26 +432,28 @@ p a {
   	color: white; /* white text*/
   	text-align: center;
 }
-.overlay-portrait,
+/*.overlay-portrait,
 .overlay-landscape {
   	font-size: 14px;
   	font-weight: 300;
   	letter-spacing: .5px;
 }	
-.overlay-portrait { /* padding of text and height of overlay for portrait pictures */
+.overlay-portrait { /* padding of text and height of overlay for portrait pictures *//*
 	max-height: 320px;	
-	padding: 70px;
+	padding: 70px; *//*
 }
-.overlay-landscape { /* padding of text and height overlay for landscape pictures */
+.overlay-landscape { /* padding of text and height overlay for landscape pictures *//*
 	max-height: 220px;	
 	padding: 70px;
-}
+}*/
 .overlay-home-text { /* text on overlay for teasers on home page. Must come after overlay-landscape to overrule */
   	font-size: 20px;
   	padding: 70px;
   	font-weight: 300;
   	letter-spacing: .5px;
+  	/*these two lines can be deleted and the above three {} can be uncommented if we want overlay on all pics. Add overlay-landscape to teasers*/
   	text-transform: uppercase;
+  	max-height: 220px;
 }
 .overlay-container:hover .overlay { /* general hover effect for overlays */
 	opacity: 1;
@@ -492,6 +483,39 @@ p a {
   About
   ========================================
 */
-.col img {
+
+.about-right-col img {
 	max-height: 500px;
+	border-radius: 5px;
+	border: solid 1px black;
 }
+.about-left-col p {
+	margin-bottom: 22px; /* add space between section */
+}  
+.about-left-col h4 {
+	margin-bottom: 4px; /* add space between section */
+} 
+
+/*
+  ========================================
+  Contact
+  ========================================
+*/
+
+.contact-list {
+	color: #00303f; /* cerulean blue */
+	font-size: 20px;
+	font-weight: 300;
+  	line-height: 30px; 
+}
+.contact-right-col img {
+	max-height: 250px;
+	border-radius: 150px;
+	border: solid 1px black;
+	margin-bottom: 30px;
+}
+.contact-left-col p {
+	margin-top: 20px;
+	font-size: 20px;
+}
+
