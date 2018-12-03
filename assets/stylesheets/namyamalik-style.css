@@ -1,0 +1,497 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+  ========================================
+  Custom styles
+  ========================================
+*/
+
+body {
+  color: #888;
+  font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: #00303f;
+}
+
+/*
+  ========================================
+  Grid
+  ========================================
+*/
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.container {
+  margin: 0 auto;
+  max-width: 100%; /*changed from 960px to 100% */
+  padding-left: 30px;
+  padding-right: 30px;
+  position: relative;
+}
+
+/*
+  ========================================
+  Clearfix
+  ========================================
+*/
+
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
+
+/*
+  ========================================
+  Rows/Columns
+  ========================================
+*/
+
+.row,	/*change to row-lead*/
+.row-portrait,
+.row-landscape {
+	background: #cae4db; 	/* sky blue*/
+ 	padding: 10px 0 30px 0;
+  	max-width: 100%;		
+	display: flex;
+	justify-content: space-around;
+  	align-items: center;
+  	flex-wrap: wrap; 
+}
+.row {
+	flex-direction: column;
+} 
+.col {
+	background: #cae4db; 	/* sky blue*/
+	display: flex;
+	max-width: 100%;	
+	flex-wrap: wrap;
+	justify-content: flex-start;
+  	align-items: center;
+}
+.left-col {
+ 	flex: 1;
+ 	margin-right: 200px;		
+}
+.right-col {
+	flex: 1;	
+}
+ 		
+/*
+  ========================================
+  Typography
+  ========================================
+*/
+
+h1, h3, h4, h5, p {
+  margin-bottom: 12px;
+}
+h1, p {
+	color: #00303f; /* cerulean blue */
+}
+h2, h3, h4 {
+  color: #dcae1d; /* honey yellow */
+}
+h1 {
+  font-size: 40px;
+  line-height: 44px;
+}
+h2 {
+  font-size: 32px;
+  line-height: 44px;
+}
+h3 {
+  font-size: 26px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  color: #a9b2b9; /* light grey */
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+strong {
+  font-weight: 400;
+}
+cite, em {
+  font-style: italic;
+}
+
+/*
+  ========================================
+  Leads
+  ========================================
+*/
+
+.lead {
+	padding: 20px 80px 30px 80px;
+  	text-align: center;
+}
+.lead h1 {
+	font-size: 40px;
+	font-weight: 500;
+	color: #00303f; /* cerulean blue */
+	margin-bottom: 2px;
+}
+.lead h2 {
+	font-size: 32px;
+	font-weight: 300;
+	color: #dcae1d; /* honey yellow */
+	margin-bottom: 2px;
+}
+.lead p,
+.lead li {
+  	font-size: 21px;
+  	font-weight: 340;
+  	line-height: 32px;
+  	color: #00303f;
+}
+
+/*
+  ========================================
+  Links
+  ========================================
+*/
+
+a {
+	color: #dcae1d; /*honey yellow*/
+  	text-decoration: none;
+}
+a:hover {
+	color: #dcae1d; /*honey yellow*/
+}
+p a {
+	border-bottom: 1px solid #dfe2e5; /*what does this do*/
+}
+.primary-header a,
+.primary-footer a {
+  color: #fff; /*white*/
+}
+.primary-header a:hover,
+.primary-footer a:hover {
+  color: #dcae1d; /*honey yellow*/
+}
+
+/*
+  ========================================
+  Buttons
+  ========================================
+*/
+
+.btn {
+  border-radius: 10px;
+  display: inline-block;
+  margin: 0;
+  color: #00303f; /*text color cerulean blue*/
+  cursor: pointer;
+  font-weight: 500;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+}
+.btn-alt { 
+  padding: 15px 30px;
+  border: 1px solid #00303f; /*cerulean blue*/
+}
+.btn-alt:hover {
+  background: #7a9d96; /*misty blue*/
+  color: #00303f; /*text color stays cerulean blue*/
+  border: 2px solid #00303f; /*border color stays cerulean blue*/
+}
+
+/*
+  ========================================
+  Cover photos
+  ========================================
+*/
+.home-cover-photo {
+	background-image: url("../images/cover-photos/home-cover-photo.jpg");
+	background-position: center;
+  	background-size: cover;
+  	background-repeat: no-repeat;
+  	width: 100%;
+  	height: 75vh;
+  	border-top: 10px solid #7a9d96; /*misty blue*/
+  	border-bottom: 10px solid #7a9d96; /*misty blue*/
+}
+.memes-cover-photo {
+	background-image: url("../images/cover-photos/memes-cover-photo.jpg");
+	background-position: center;
+  	background-size: cover;
+  	background-repeat: no-repeat;
+  	width: 100%;
+  	height: 75vh;
+  	border-top: 10px solid #7a9d96; /*misty blue*/
+  	border-bottom: 10px solid #7a9d96; /*misty blue*/
+}
+.photoedits-cover-photo {
+	background-image: url("../images/cover-photos/photoedits-cover-photo.jpg");
+	background-position: center;
+  	background-size: cover;
+  	background-repeat: no-repeat;
+  	width: 100%;
+  	height: 75vh;
+  	border-top: 10px solid #7a9d96; /*misty blue*/
+  	border-bottom: 10px solid #7a9d96; /*misty blue*/
+}
+.videos-cover-photo {
+	background-image: url("../images/cover-photos/videos-cover-photo.jpg");
+	background-position: center;
+  	background-size: cover;
+  	background-repeat: no-repeat;
+  	width: 100%;
+  	height: 75vh;
+  	border-top: 10px solid #7a9d96; /*misty blue*/
+  	border-bottom: 10px solid #7a9d96; /*misty blue*/
+}
+.gifs-cover-photo {
+	background-image: url("../images/cover-photos/gifs-cover-photo.jpg");
+	background-position: center;
+  	background-size: cover;
+  	background-repeat: no-repeat;
+  	width: 100%;
+  	height: 75vh;
+  	border-top: 10px solid #7a9d96; /*misty blue*/
+  	border-bottom: 10px solid #7a9d96; /*misty blue*/
+}
+.contact-cover-photo {
+	background-image: url("../images/cover-photos/contact-cover-photo.jpg");
+	background-position: center;
+  	background-size: cover;
+  	background-repeat: no-repeat;
+  	width: 100%;
+  	height: 75vh;
+  	border-top: 10px solid #7a9d96; /*misty blue*/
+  	border-bottom: 10px solid #7a9d96; /*misty blue*/
+}
+.about-cover-photo {
+	background-image: url("../images/cover-photos/about-cover-photo.jpg");
+	background-position: center;
+  	background-size: cover;
+  	background-repeat: no-repeat;
+  	width: 100%;
+  	height: 75vh;
+  	border-top: 10px solid #7a9d96; /*misty blue*/
+  	border-bottom: 10px solid #7a9d96; /*misty blue*/
+}
+
+
+
+/*
+  ========================================
+  Primary header
+  ========================================
+*/
+
+.logo {
+  	border-top: 4px solid #7a9d96; /* misty blue */ 
+  	padding: 20px 0 0 0;
+  	float: left;
+  	font-size: 48px;
+  	line-height: 44px;
+  	font-weight: 300;
+  	letter-spacing: .5px;
+  	text-transform: uppercase;
+}
+.tagline {
+ 	margin: 36px 0 28px 0;
+  	text-align: right;
+}
+.primary-nav {
+  	font-size: 14px;
+  	font-weight: 400;
+  	letter-spacing: .5px;
+  	text-transform: uppercase;
+}	
+
+/*
+  ========================================
+  Primary footer
+  ========================================
+*/
+
+.primary-footer {
+  	padding-bottom: 24px;
+  	padding-top: 24px;
+  	color: #dcae1d;
+  	font-size: 14px;
+  	border-top: 10px solid #7a9d96; /*misty blue*/;
+}
+.primary-footer small {
+  	font-weight: 400;
+  	float: left;
+}
+
+/*
+  ========================================
+  Navigation
+  ========================================
+*/
+
+.nav {
+  	text-align: right;
+}
+.nav li {
+	display: inline-block;
+	margin: 0 10px;
+	vertical-align: top;
+}
+.nav li:last-child {
+	margin-right: 0;
+}
+
+/*
+  ========================================
+  Image Positioning
+  ========================================
+*/
+.row-portrait img,
+.row-landscape img {
+	border-radius: 5px;
+	border: solid 1px black;
+	max-width: 100%;
+} 
+.row-portrait img { 	/*if I set this to 400px then four items appear on the first row*/
+	height: 320px;
+}
+.row-landscape img {
+	height: 220px;
+}	
+
+/*
+  ========================================
+  Image Overlay
+  ========================================
+*/
+
+.overlay-container {
+	position: relative;
+  	max-width: 100%;
+}
+.overlay {	/* general overlay */
+	position: absolute;
+	border-radius: 5px;
+  	top: 0;
+	bottom: 0; 
+  	left: 0;
+  	right: 0;	 
+  	max-width: 100%;
+  	background: rgb(0, 0, 0);
+  	background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  	color: #f1f1f1;
+  	transition: .5s ease;
+  	opacity: 0;
+  	color: white; /* white text*/
+  	text-align: center;
+}
+.overlay-portrait,
+.overlay-landscape {
+  	font-size: 14px;
+  	font-weight: 300;
+  	letter-spacing: .5px;
+}	
+.overlay-portrait { /* padding of text and height of overlay for portrait pictures */
+	max-height: 320px;	
+	padding: 70px;
+}
+.overlay-landscape { /* padding of text and height overlay for landscape pictures */
+	max-height: 220px;	
+	padding: 70px;
+}
+.overlay-home-text { /* text on overlay for teasers on home page. Must come after overlay-landscape to overrule */
+  	font-size: 20px;
+  	padding: 70px;
+  	font-weight: 300;
+  	letter-spacing: .5px;
+  	text-transform: uppercase;
+}
+.overlay-container:hover .overlay { /* general hover effect for overlays */
+	opacity: 1;
+}
+
+/*
+  ========================================
+  Home
+  ========================================
+*/
+
+
+/*
+  ========================================
+  Memes
+  ========================================
+*/
+
+/*
+  ========================================
+  Photoedits
+  ========================================
+*/
+
+/*
+  ========================================
+  About
+  ========================================
+*/
+.col img {
+	max-height: 500px;
+}
