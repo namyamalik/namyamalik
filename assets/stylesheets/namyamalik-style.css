@@ -102,23 +102,23 @@ body {
 .about-left-col {
  	flex: 66.66%;
  	padding-left: 30px;		
- 	align-items: top;
+ 	align-items: center;
 }
 .about-right-col {
 	padding-left: 50px;	
 	flex: 33.33%;	
-	align-items: top;
+	align-items: center;
 }
 .contact-left-col {
  	flex: 70%;
  	padding-top: 30px;
  	padding-left: 70px;	
- 	align-items: flex-start;	
+ 	align-items: center;	
 }
 .contact-right-col {
 	flex: 30%;	
 	padding-left: 0;	
-	align-items: baseline;
+	align-items: center;
 }
 
 /*
@@ -157,14 +157,14 @@ h1 {
 }
 h2 {
   	font-size: 32px;
-  	line-height: 44px;
+  	line-height: 33px;
   	font-weight: 300px;
   	color: #dcae1d; /* honey yellow */
 }
 h3 {
   	font-size: 24px;
   	font-weight: 300;
-  	line-height: 18px;
+  	line-height: 28px;
   	color: #00303f; /* cerulean blue */
 }
 h4 {
@@ -258,7 +258,7 @@ a:hover {
 	background-position: center;
   	background-size: cover;
   	background-repeat: no-repeat;
-  	width: 100%;
+  	max-width: 100%;
   	height: 75vh;
   	border-top: 10px solid #7a9d96; /*misty blue*/
   	border-bottom: 10px solid #7a9d96; /*misty blue*/
@@ -268,7 +268,7 @@ a:hover {
 	background-position: center;
   	background-size: cover;
   	background-repeat: no-repeat;
-  	width: 100%;
+  	max-width: 100%;
   	height: 75vh;
   	border-top: 10px solid #7a9d96; /*misty blue*/
   	border-bottom: 10px solid #7a9d96; /*misty blue*/
@@ -278,17 +278,7 @@ a:hover {
 	background-position: center;
   	background-size: cover;
   	background-repeat: no-repeat;
-  	width: 100%;
-  	height: 75vh;
-  	border-top: 10px solid #7a9d96; /*misty blue*/
-  	border-bottom: 10px solid #7a9d96; /*misty blue*/
-}
-.videos-cover-photo {
-	background-image: url("../images/cover-photos/videos-cover-photo.jpg");
-	background-position: center;
-  	background-size: cover;
-  	background-repeat: no-repeat;
-  	width: 100%;
+  	max-width: 100%;
   	height: 75vh;
   	border-top: 10px solid #7a9d96; /*misty blue*/
   	border-bottom: 10px solid #7a9d96; /*misty blue*/
@@ -298,7 +288,7 @@ a:hover {
 	background-position: center;
   	background-size: cover;
   	background-repeat: no-repeat;
-  	width: 100%;
+  	max-width: 100%;
   	height: 75vh;
   	border-top: 10px solid #7a9d96; /*misty blue*/
   	border-bottom: 10px solid #7a9d96; /*misty blue*/
@@ -308,7 +298,7 @@ a:hover {
 	background-position: center;
   	background-size: cover;
   	background-repeat: no-repeat;
-  	width: 100%;
+  	max-width: 100%;
   	height: 75vh;
   	border-top: 10px solid #7a9d96; /*misty blue*/
   	border-bottom: 10px solid #7a9d96; /*misty blue*/
@@ -318,7 +308,7 @@ a:hover {
 	background-position: center;
   	background-size: cover;
   	background-repeat: no-repeat;
-  	width: 100%;
+  	max-width: 100%;
   	height: 75vh;
   	border-top: 10px solid #7a9d96; /*misty blue*/
   	border-bottom: 10px solid #7a9d96; /*misty blue*/
@@ -485,6 +475,8 @@ a:hover {
 */
 
 .about-right-col img {
+	display: flex;
+	max-width: 100%;
 	max-height: 500px;
 	border-radius: 5px;
 	border: solid 1px black;
@@ -509,6 +501,8 @@ a:hover {
   	line-height: 30px; 
 }
 .contact-right-col img {
+	display: flex;
+	max-width: 100%;
 	max-height: 250px;
 	border-radius: 150px;
 	border: solid 1px black;
