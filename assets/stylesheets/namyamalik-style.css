@@ -262,7 +262,7 @@ a:hover {
   	height: 75vh;
   	border-top: 10px solid #7a9d96; /*misty blue*/
   	border-bottom: 10px solid #7a9d96; /*misty blue*/
-  	display: -webkit-inline-box;
+   	flex:100%;
 }
 .memes-cover-photo {
 	background-image: url("../images/cover-photos/memes-cover-photo.jpg");
@@ -273,7 +273,7 @@ a:hover {
   	height: 75vh;
   	border-top: 10px solid #7a9d96; /*misty blue*/
   	border-bottom: 10px solid #7a9d96; /*misty blue*/
-  	display: -webkit-inline-box;
+  	flex:100%;
 }
 .photoedits-cover-photo {
 	background-image: url("../images/cover-photos/photoedits-cover-photo.jpg");
@@ -284,7 +284,7 @@ a:hover {
   	height: 75vh;
   	border-top: 10px solid #7a9d96; /*misty blue*/
   	border-bottom: 10px solid #7a9d96; /*misty blue*/
-  	display: -webkit-inline-box;
+  	flex:100%;
 }
 .gifs-cover-photo {
 	background-image: url("../images/cover-photos/gifs-cover-photo.jpg");
@@ -295,18 +295,7 @@ a:hover {
   	height: 75vh;
   	border-top: 10px solid #7a9d96; /*misty blue*/
   	border-bottom: 10px solid #7a9d96; /*misty blue*/
-  	display: -webkit-inline-box;
-}
-.contact-cover-photo {
-	background-image: url("../images/cover-photos/contact-cover-photo.jpg");
-	background-position: center;
-  	background-size: cover;
-  	background-repeat: no-repeat;
-  	max-width: 100%;
-  	height: 75vh;
-  	border-top: 10px solid #7a9d96; /*misty blue*/
-  	border-bottom: 10px solid #7a9d96; /*misty blue*/
-  	display: -webkit-inline-box;
+  	flex:100%;
 }
 .about-cover-photo {
 	background-image: url("../images/cover-photos/about-cover-photo.jpg");
@@ -317,7 +306,17 @@ a:hover {
   	height: 75vh;
   	border-top: 10px solid #7a9d96; /*misty blue*/
   	border-bottom: 10px solid #7a9d96; /*misty blue*/
-  	display: -webkit-inline-box;
+  	display: flex;
+}
+.contact-cover-photo {
+	background-image: url("../images/cover-photos/contact-cover-photo.jpg");
+	background-position: center;
+  	background-size: cover;
+  	background-repeat: no-repeat;
+  	max-width: 100%;
+  	height: 75vh;
+  	border-top: 10px solid #7a9d96; /*misty blue*/
+  	border-bottom: 10px solid #7a9d96; /*misty blue*/
 }
 
 /*
