@@ -302,7 +302,7 @@ a:hover {
 	background-position: center;
   	background-size: cover;
   	background-repeat: no-repeat;
-  	max-width: 100%;
+  	width: 100%;
   	height: 75vh;
   	border-top: 10px solid #7a9d96; /*misty blue*/
   	border-bottom: 10px solid #7a9d96; /*misty blue*/
@@ -313,7 +313,7 @@ a:hover {
 	background-position: center;
   	background-size: cover;
   	background-repeat: no-repeat;
-  	max-width: 100%;
+  	width: 100%;
   	height: 75vh;
   	border-top: 10px solid #7a9d96; /*misty blue*/
   	border-bottom: 10px solid #7a9d96; /*misty blue*/
