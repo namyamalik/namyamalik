@@ -78,7 +78,7 @@ body {
   padding-right: 30px;
   position: relative;
 }
-.row,	/*change to row-lead*/
+.row-lead,
 .row-portrait,
 .row-landscape,
 .row-projects { 	
@@ -86,14 +86,14 @@ body {
   	max-width: 100%;		
 	display: flex;
 }	
-.row,	/*change to row-lead*/
+.row-lead,
 .row-portrait,
 .row-landscape {
 	justify-content: space-around;
   	align-items: center;
   	flex-wrap: wrap; 
 }
-.row,
+.row-lead,
 .row-projects {
 	flex-direction: column;
 } 
@@ -149,8 +149,8 @@ body {
   ========================================
 */
 
-h1, h2, h3, h4, p {
-  margin-bottom: 12px;
+h1, h2, h3, h5, p {
+  	margin-bottom: 12px;
 }
 h1 {
 	color: #00303f; /* cerulean blue */
@@ -172,9 +172,16 @@ h3 {
 }
 h4 {
 	color: #dcae1d; /* honey yellow */
-  	font-size: 18px;
+  	font-size: 19px;
   	text-transform: uppercase;
   	font-weight: 400;
+  	margin-bottom: 8px;
+}
+h5 {
+  	font-size: 18px;
+  	font-weight: 400;
+  	line-height: 28px;
+  	color: #00303f; /* cerulean blue */
 }
 p {
 	color: #00303f; /* cerulean blue */
@@ -196,7 +203,7 @@ cite, em {
 */
 
 .lead {
-	padding: 20px 80px 30px 80px;
+	padding: 20px 80px 20px 80px;
   	text-align: center;
 }
 .lead h1 {
@@ -261,6 +268,7 @@ a:hover {
 	background-color: #00303f; /*cerulean blue*/
 	border-bottom: 10px solid #7a9d96; /*misty blue*/;
 	padding-bottom: 8px;
+	margin-bottom: 12px;
 }
 .logo {
   	border-top: 4px solid #7a9d96; /* misty blue */ 
@@ -349,7 +357,7 @@ a:hover {
 	position: relative;
   	max-width: 100%;
 }
-.overlay {	/* general overlay */
+.overlay-full {	/* general overlay */
 	position: absolute;
 	border-radius: 5px;
   	top: 0;
@@ -365,30 +373,38 @@ a:hover {
   	color: white; /* white text*/
   	text-align: center;
 }
-/*.overlay-portrait,
-.overlay-landscape {
-  	font-size: 14px;
-  	font-weight: 300;
-  	letter-spacing: .5px;
-}	
-.overlay-portrait { /* padding of text and height of overlay for portrait pictures *//*
-	max-height: 320px;	
-	padding: 70px; *//*
+.overlay-mini {	/*mini overlay*/
+	position: absolute;
+	border-radius: 5px;
+  	bottom: 0;
+  	left: 0;
+  	right: 0;
+  	max-width: 100%;
+  	background: rgb(0, 0, 0);
+  	background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  	color: #f1f1f1;
+  	transition: .5s ease;
+  	opacity: 0;
+  	color: white; /* white text*/
+  	text-align: center;
 }
-.overlay-landscape { /* padding of text and height overlay for landscape pictures *//*
-	max-height: 220px;	
-	padding: 70px;
-}*/
-.overlay-home-text { /* text on overlay for teasers on home page. Must come after overlay-landscape to overrule */
+.overlay-teasers-text { /* text on overlay for teasers on home page. Must come after overlay-landscape to overrule */
   	font-size: 20px;
   	padding: 70px;
   	font-weight: 300;
   	letter-spacing: .5px;
-  	/*these two lines can be deleted and the above three {} can be uncommented if we want overlay on all pics. Add overlay-landscape to teasers*/
   	text-transform: uppercase;
   	max-height: 220px;
 }
-.overlay-container:hover .overlay { /* general hover effect for overlays */
+.overlay-caption-text { /*this is for portrait pics only*/
+	font-size: 13px;
+  	padding: 15px 3px 15px 3px;
+  	font-weight: 300;
+  	letter-spacing: .5px;
+  	max-height: 320px;
+}
+.overlay-container:hover .overlay-full,
+.overlay-container:hover .overlay-mini { /* general hover effect for overlays */
 	opacity: 1;
 }
 
@@ -455,7 +471,8 @@ a:hover {
 	max-height: 250px;
 	border-radius: 150px;
 	border: solid 1px black;
-	margin-bottom: 30px;
+	margin-top: 10px;
+	margin-bottom: 20px;
 	display: -webkit-inline-box;
 }
 .contact-left-col p {
