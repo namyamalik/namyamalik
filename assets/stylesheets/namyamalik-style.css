@@ -376,7 +376,7 @@ a:hover {
 .overlay-mini {	/*mini overlay*/
 	position: absolute;
 	border-radius: 5px;
-  	bottom: 0;
+  	top: 0;
   	left: 0;
   	right: 0;
   	max-width: 100%;
