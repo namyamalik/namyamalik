@@ -77,7 +77,18 @@ body {
   padding-left: 30px;
   padding-right: 30px;
   position: relative;
+
 }
+
+.row-lead,
+.row-portrait,
+.row-landscape,
+.row-projects,
+.col-grid { 	
+	border-left: 5px solid #7a9d96; /*misty blue*/;
+	border-right: 5px solid #7a9d96; /*misty blue*/;
+}
+
 .row-lead,
 .row-portrait,
 .row-landscape,
@@ -85,7 +96,8 @@ body {
  	padding: 10px 30px 30px 30px;
   	max-width: 100%;		
 	display: flex;
-}	
+}
+		
 .row-lead,
 .row-portrait,
 .row-landscape {
@@ -266,9 +278,9 @@ a:hover {
 
 .primary-header {
 	background-color: #00303f; /*cerulean blue*/
-	border-bottom: 10px solid #7a9d96; /*misty blue*/;
+	border-bottom: 5px solid #7a9d96; /*misty blue*/;
 	padding-bottom: 8px;
-	margin-bottom: 12px;
+	margin-bottom: 0px;
 }
 .logo {
   	border-top: 4px solid #7a9d96; /* misty blue */ 
@@ -303,7 +315,7 @@ a:hover {
   	padding-bottom: 24px;
   	padding-top: 24px;
   	font-size: 14px;
-  	border-top: 10px solid #7a9d96; /*misty blue*/;
+  	border-top: 5px solid #7a9d96; /*misty blue*/;
 }
 .primary-footer small {
   	font-weight: 400;
