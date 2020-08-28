@@ -32,7 +32,8 @@ body {
 	line-height: 1;	
 }
 ol, ul {
-	list-style: none;
+  	list-style: none;
+};
 }
 blockquote, q {
 	quotes: none;
@@ -55,7 +56,6 @@ table {
 
 body {
   	font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-/*   background-color: #cae4db; /* sky blue */
 	background-color: #FFFFFF  /* white */
 }
 
@@ -126,50 +126,43 @@ body {
 */
 
 h0, h1, h2, h3, h5, p {
-  	margin-bottom: 20px;
+  	margin-bottom: 2vw;
 }
 h0 {
 	color: #00303f; /* cerulean blue */
-  	font-size: 60px;
-  	line-height: 44px;
+  	font-size: 5vw;
+  	line-height: 4.5vw;
   	font-weight: 450;
 }
 h1 {
 	color: #00303f; /* cerulean blue */
-  	font-size: 54px;
-  	line-height: 44px;
+  	font-size: 4.5vw;
+  	line-height: 4.5vw;
   	font-weight: 400;
 }
 h2 {
-  	font-size: 32px;
-  	line-height: 33px;
+  	font-size: 3vw;
+  	line-height: 3.5vw;
   	font-weight: 300px;
   	color: #dcae1d; /* honey yellow */
 }
 h3 {
   	font-size: 24px;
   	font-weight: 300;
-  	line-height: 28px;
+  	line-height: 3vw;
   	color: #00303f; /* cerulean blue */
 }
-h4 {
-	color: #dcae1d; /* honey yellow */
-  	font-size: 19px;
-  	text-transform: uppercase;
-  	font-weight: 400;
-  	margin-bottom: 8px;
-}
-h5 {
-  	font-size: 18px;
-  	font-weight: 400;
-  	line-height: 28px;
-  	color: #00303f; /* cerulean blue */
+h4 { /* bolded p element */
+	color: #00303f; /* cerulean blue */
+	font-size: 1.4vw;
+	font-weight: 400;
+  	line-height: 3vw; 	
 }
 p {
 	color: #00303f; /* cerulean blue */
-	font-size: 17px;
+	font-size: 1.4vw;
 	font-weight: 300;
-  	line-height: 30px; 	
+  	line-height: 3vw; 	
 }
 strong {
   font-weight: 400;
@@ -191,6 +184,12 @@ a {
 a:hover {
 	color: #dcae1d; /*honey yellow*/
 }
+
+a.disable {
+  pointer-events: none;
+  cursor: default;
+}
+
 .primary-header a {
   color: #fff; /*white*/
 }
@@ -212,27 +211,27 @@ a:hover {
 	position: fixed; /* so that header stays there while scrolling */
   	width: 100%; /* so that header stays there while scrolling */
   	top: 0; /* so that header stays there while scrolling */
-  	z-index: 10; /* greater z-index shows up in front of other content */
+  	z-index: 2; /* greater z-index shows up in front of other content */
 }
 
 .logo {
   	border-top: 3px solid #7a9d96; /* misty blue */ 
   	padding: 3px 0 0 0;
   	float: left;
-  	font-size: 30px;		/* changed h1 properties */
+  	font-size: 2.5vw;		/* changed h1 properties */
   	font-weight: 300;		/* changed h1 properties */
-  	letter-spacing: 2px;
+  	letter-spacing: 0.2vw;
   	text-transform: uppercase;
   	display: inline;
   	
 }
 
 .primary-nav {
-  	font-size: 14px;
+  	font-size: 1.2vw;
   	font-weight: 400;
-  	letter-spacing: .5px;
+  	letter-spacing: 0.07vw;
   	text-transform: uppercase;
-  	margin-top: 30px; /* flush with bottom */
+  	margin-top: 3vw; /* flush with bottom */
 }	
 
 /*
@@ -246,7 +245,7 @@ a:hover {
 }
 .nav li {
 	display: inline-block;
-	margin: 0 10px; /* top/bottom space and in-between space */
+	margin: 0 1vw; /* top/bottom space and in-between space */
 }
 .nav li:last-child {
 	margin-right: 0;
@@ -260,11 +259,9 @@ a:hover {
 
 .primary-footer {
 	background-color: #FFFFFF; /* white */
-  	padding-bottom: 15px;
-  	padding-top: 5px;
-  	font-size: 14px;
+  	padding-bottom: 1.9vw;
+  	font-size: 1.3vw;
   	text-align: center;
-/*   	border-top: 3px solid #7a9d96; /*misty blue*/; */
 }
 .primary-footer small {
   	font-weight: 400;
@@ -277,25 +274,23 @@ a:hover {
 */
 
 .lead {
-	padding: 20px 80px 230px 80px;
+	padding: 7vw 7vw 14vw 7vw; /* top first */
   	text-align: center;
-	/* background-color: #111111; */
 }
 
 .lead h0 {
-	padding-top: 100px;
-	padding-bottom: 30px;
+	padding-bottom: 3vw;
 }
 
 .lead h2 {
-	padding-bottom: 30px;
+	padding-bottom: 3vw;
 }
 
 .lead-icons img {
-	height: 40px;
-	width: 38px;
+	height: 3.2vw;
+	width: 3.0vw;
 	display: inline;
-	margin: 0 30px 0 30px; /* space between the icons */
+	margin: 0 3.2vw 0 3.2vw; /* space between the icons */
 }
 
 .lead-icons img:hover { /* hover effect for social media icons */
@@ -310,25 +305,24 @@ a:hover {
 
 .about-section {
 	display: flex;
-	width: 100%;
-	padding: 0px 80px 60px 80px;
+	padding: 0 8vw 6vw 2.5vw; /* last one is left padding */
 }
 
 .about-words {
-	width: 650px;
-	padding-top: 40px;
-	padding-left: 30px;
-	padding-right: 50px;
+	width: 60%;
+	padding-top: 1.3vw;
+	padding-left: 2.5vw;
+	padding-right: 4vw;
 }
 
 .about-image {
-	flex: 1;
+	width: 40%;
 }
 
 .about-image img {
-	margin-top: 40px;
-	height: 260px;
-	width: 370px;
+	margin-top: 3vw;
+	max-width: 100%; /* responsive image */
+	height: auto; /* responsive image */
 }
 
 /*
@@ -337,30 +331,43 @@ a:hover {
   ========================================
 */
 
-.projects-categories {
-	float: left;
-	text-align: left;
-	width: 100%;
-}
-
-.projects-categories h2 {
-	margin-top: 40px;
-	margin-bottom: 25px;
-}
-
-.projects-categories img {
-	width: 225px;
-	height: 200px;
-	margin-right: 100px;
-	border: 1px solid #00303f;
-	border-radius: 5px;
+.projects-section {
+	display: flex;
+	padding: 0px 0px 0px 4.8vw;
 }
 
 .projects-teasers {
-	display: flex;
-	flex: 1;
-	width: 100%;
-} 
+	max-width: 25%;
+}
+
+.projects-teasers h2 {
+	margin-top: 1vw;
+	margin-bottom: 0.1vw;
+	font-size: 2vw;
+}
+
+.projects-teasers:first-child h2 {
+	padding-left: 0;
+}
+
+.projects-teasers:nth-child(2) h2 {
+	padding-left: 3vw;
+}
+
+.projects-teasers:nth-child(3) h2 {
+	padding-left: 4.5vw;
+}
+
+.projects-teasers:last-child h2 {
+	padding-left: 3.5vw;
+}
+
+.projects-section img {
+	width: 14vw;
+	height: 12vw;
+	border: 1px solid #00303f;
+	border-radius: 5px;
+}
 
 /*
   ========================================
@@ -370,18 +377,20 @@ a:hover {
 
 .overlay-container { /* overlay container covers a project teaser image */
 	position: relative;
-  	max-width: 225px;
-  	margin: 0px 70px 0px 0px;
+  	width: 14vw;
+	height: 12vw;
+  	margin: 2vw 8vw 0 2vw;
 }
 
 .overlay-mini {	/* mini overlay */
 	position: absolute;
 	border-radius: 5px;
-  	bottom: 6px;
+  	bottom: 0;
   	left: 0;
   	right: 0;
-  	max-width: 225px;
-  	background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  	width: 14vw;
+  	height: 4vw;
+  	background: rgba(0, 0, 0, 0.7); /* Black see-through */
   	color: #f1f1f1;
   	transition: .5s ease;
   	opacity: 0;
@@ -391,11 +400,10 @@ a:hover {
 }
 
 .overlay-caption-text { /* the caption on overlay */
-	font-size: 13px;
-  	padding: 10px 3px 10px 3px;
+	font-size: 1vw;
   	font-weight: 300;
   	letter-spacing: .5px;
-  	max-height: 320px;
+  	height: 3.5vw;
 }
 
 .overlay-container:hover .overlay-mini { /* show mini overlay when project teasers are hovered */
@@ -405,8 +413,13 @@ a:hover {
 
 .overlay-container:hover img { /* thicken image border when project teasers are hovered */
 	border: 2px solid #00303f;
-	border-radius: 5px;
+	border-radius: 6px;
 	cursor: pointer;
+}
+
+.overlay-container.disable {
+  pointer-events: none;
+  cursor: default;
 }
 
 /*
@@ -417,77 +430,88 @@ a:hover {
 
 .modal {
 	position: fixed;
-	z-index: 10;
-	top: 7em;
-	bottom: 2em;
-	left: 14em;
-	right: 14em;
+	z-index: 20;
+	
+	max-width: 60vw; /* size of box */
+	max-height: 74vh;
+	
+	top: 22vh; /* to make sure modal stays in center when window is resized */
+	left: 20vw;
+	
 	background: white; /* gives box look */
-	border: 1px solid #00303f; /* cerulean blue */
+	border: 3px solid #7a9d96; /* misty blue */
 	border-radius: 15px;
 	overflow-y: scroll;	
-	box-shadow: 0 0 0 15em rgba(0,0,0,0.8); /* makes background go dark via box shadow */
+	box-shadow: 0 0 0 100em rgba(0,0,0,0.8); /* makes background go dark via box shadow */
 	
 	display: none; /* hidden until teaser is clicked */
 }
 
 .modal.open { /* when teaser is clicked and 'open' class is added */
 	display: block;
+	
 }
 
 .modal-close-button img {
 	position: fixed;
-	height: 25px;
-	width: 25px;
-	right: 61em;
-	left: 61em;
+	
+	height: 1.8vw; /* size of icon */
+	width: 1.8vw;
+
+	top: 24vh; /* to make sure icon stays in top-right when window is resized */
+	left: 76.5vw;
+	
   	border-radius: 50%; /* circle border */
-  	margin-top: 8px;
   	cursor: pointer;
 }
 
 .modal-close-button img:hover {
-	transform: scale(1.1);
+	transform: scale(1.15);
 	cursor: pointer;
 }
 
 .modal-words h2 {
-	margin-top: 25px;
-	margin-bottom: 18px;
+	margin-top: 2.5vh;
+	margin-bottom: 1vh;
 	text-align: center;
 }
 
-.modal-words p, h5 {
-	padding-left: 20px;
-	padding-right: 20px;
-	text-align: center;
-	margin-top: 0px;
-	margin-bottom: 12px;
+.modal-words p {
+	padding-left: 3vw;
+	padding-right: 3vw;
+	text-align: left;
+	margin-top: 0;
+	margin-bottom: 0.8vh;
 }
 
-.modal-words h5:hover {
-	transform: scale(1.05);
-	cursor: pointer;
+.modal-words h4 {
+	margin-top: 2vh;
+	margin-bottom: 3vh;
+	text-align: center;
 }
 
 .modal1-images, .modal2-images, .modal3-images, .modal4-images, .modal5-images, .modal6-images, .modal7-images, 
-.modal8-images {
+.modal8-images, .modal9-images {
 	display: flex;
   	justify-content: center;
   	align-items: center;
-  	height: 40vh;
+  	margin-top: 2vw; /* how much space between words above and images */
+  	margin-bottom: 2vw; /* how much space between end of box below and images */
 }
 
 .modal1-images img:last-child {
-	width: 250px;
+	width: 18vw;
+	margin-left: 10vw; /* how much space between pics */
 }
 
 .modal2-images img:last-child {
-	width: 350px;
+	width: 20vw;
+	margin-left: 10vw; /* how much space between pics */
 }
 
 .modal3-images img:last-child {
-	width: 150px;
+	width: 10vw;
+	margin-left: 10vw; /* how much space between pics */
 }
 
 

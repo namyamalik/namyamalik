@@ -23,7 +23,7 @@ $('a[href*="#"]')
         // Only prevent default if animation is actually gonna happen
         event.preventDefault();
         $('html, body').animate({
-          scrollTop: target.offset().top - 100 // minus 100 so that sticky header does not block title of target scrolled section
+          scrollTop: target.offset().top - 120// minus 120 so that sticky header does not block title of target scrolled section
         }, 900, function() {
           
           
