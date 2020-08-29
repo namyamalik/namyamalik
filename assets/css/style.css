@@ -243,7 +243,7 @@ a.disable {
 }
 .nav li {
 	display: inline-block;
-	margin: 0 1vw; /* top/bottom space and in-between space */
+	margin: 0 1.3vw; /* top/bottom space and in-between space */
 }
 .nav li:last-child {
 	margin-right: 0;
