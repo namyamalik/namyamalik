@@ -75,8 +75,8 @@ body {
 .container {
   margin: 0 auto;
   max-width: 100%; /*changed from 960px to 100% */
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 3vw;
+  padding-right: 3vw;
   position: relative;
 
 }
@@ -88,16 +88,15 @@ body {
 */
 
 .row-landscape { 	
-	margin-top: 80px; /* so that sticky header does not overlap */
- 	padding: 0px 30px 30px 30px;
+	margin-top: 8vw; /* so that sticky header does not overlap */
+ 	padding: 0px 3vw 0vw 3vw;
   	max-width: 100%;		
 	display: flex;
-	margin-bottom: 60px;
 	flex-direction: column;
 	justify-content: space-around;
   	align-items: center;
   	flex-wrap: wrap; 
-  	z-index: 1; /* so that primary-header has greater z-index and stays on top */
+  	z-index: 1; /* so that primary-header has greater z-index of 2 and stays on top */
 }
 
 /*
@@ -209,6 +208,7 @@ a.disable {
 	padding-bottom: 0px;
 	margin-bottom: 0px;
 	position: fixed; /* so that header stays there while scrolling */
+	height: 5vw;
   	width: 100%; /* so that header stays there while scrolling */
   	top: 0; /* so that header stays there while scrolling */
   	z-index: 2; /* greater z-index shows up in front of other content */
@@ -216,14 +216,12 @@ a.disable {
 
 .logo {
   	border-top: 3px solid #7a9d96; /* misty blue */ 
-  	padding: 3px 0 0 0;
   	float: left;
-  	font-size: 2.5vw;		/* changed h1 properties */
+  	font-size: 2.3vw;		/* changed h1 properties */
   	font-weight: 300;		/* changed h1 properties */
   	letter-spacing: 0.2vw;
   	text-transform: uppercase;
-  	display: inline;
-  	
+  	display: inline;  	
 }
 
 .primary-nav {
@@ -231,7 +229,7 @@ a.disable {
   	font-weight: 400;
   	letter-spacing: 0.07vw;
   	text-transform: uppercase;
-  	margin-top: 3vw; /* flush with bottom */
+  	line-height: 5vw; /* vertically aligned in the middle of header */
 }	
 
 /*
@@ -259,6 +257,7 @@ a.disable {
 
 .primary-footer {
 	background-color: #FFFFFF; /* white */
+  	padding-top: 6vw;
   	padding-bottom: 1.9vw;
   	font-size: 1.3vw;
   	text-align: center;
@@ -274,23 +273,23 @@ a.disable {
 */
 
 .lead {
-	padding: 7vw 7vw 14vw 7vw; /* top first */
+	padding: 3.5vw 7vw 0vw 7vw; /* first number is top */
   	text-align: center;
 }
 
 .lead h0 {
-	padding-bottom: 3vw;
+	padding-bottom: 0.9vw;
 }
 
 .lead h2 {
-	padding-bottom: 3vw;
+	padding-bottom: 0.9vw;
 }
 
 .lead-icons img {
 	height: 3.2vw;
 	width: 3.0vw;
 	display: inline;
-	margin: 0 3.2vw 0 3.2vw; /* space between the icons */
+	margin: 0 3.2vw 2vw 3.2vw; /* space between the icons */
 }
 
 .lead-icons img:hover { /* hover effect for social media icons */
@@ -305,7 +304,7 @@ a.disable {
 
 .about-section {
 	display: flex;
-	padding: 0 8vw 6vw 2.5vw; /* last one is left padding */
+	padding: 0 8vw 0vw 2.5vw; /* top, right, bottom, left */
 }
 
 .about-words {
@@ -522,67 +521,12 @@ a.disable {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-  ========================================
-  Columns
-  ========================================
-*/
-.col-grid {
-	display: flex;
-	max-width: 100%;	
-	justify-content: center;
-}
-.about-left-col {
- 	flex: 66.66%;
- 	padding-left: 30px;		
- 	align-items: center;
-}
-.about-right-col {
-	padding-left: 50px;	
-	flex: 33.33%;	
-	align-items: center;
-}
-.contact-left-col {
- 	flex: 70%;
- 	padding-top: 30px;
- 	padding-left: 70px;	
- 	align-items: center;	
-}
-.contact-right-col {
-	flex: 30%;	
-	padding-left: 0;	
-	align-items: center;
-}
-
 /*
   ========================================
   Dropdown
   ========================================
 */
-.dropdown {
+/* .dropdown {
   	position: relative;
   	display: inline-block;  	
 }
@@ -590,103 +534,22 @@ a.disable {
   	display: none;
   	position: absolute;
   	background-color: #cae1db; /*sky blue*/
-  	min-width: 90px;
-  	text-align: center;
-  	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* alternate to border */
-  	z-index: 1; /* keeps dropdown content in foreground */
-}
+/*   	min-width: 90px; */
+/*   	text-align: center; */
+/*   	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* alternate to border */
+/*   	z-index: 1; /* keeps dropdown content in foreground */
+/* } */
+/* 
 .dropdown-content a {
   	color: #00303f; /*cerulean blue*/
-  	padding: 10px 7px 10px 7px;
-  	display: block;
-}	
-.dropdown-content a:hover {
-	background-color: #7a9d96; /* misty blue */
-	color: #00303f; /* keeps the links cerulean blue when hovered upon */
-}
-.dropdown:hover .dropdown-content {
-  	display: block;
-}
-
-/*
-  ========================================
-  Home
-  ========================================
-*/
-
-.about-right-col img {
-	display: flex;
-	max-width: 100%;
-	max-height: 500px;
-	margin-top: 50px;
-	/* border-radius: 5px; */
-	/* border: solid 1px black; */
-	display: -webkit-inline-box;
-}
-.about-left-col p {
-	margin-bottom: 22px; /* add space between section */
-}  
-.about-left-col h4 {
-	margin-bottom: 4px; /* add space between section */
-} 
-
-/*
-  ========================================
-  Contact
-  ========================================
-*/
-
-.contact-list {
-	color: #00303f; /* cerulean blue */
-	font-size: 20px;
-	font-weight: 300;
-  	line-height: 30px; 
-}
-.contact-right-col img {
-	display: flex;
-	max-width: 100%;
-	max-height: 250px;
-	border-radius: 150px;
-	border: solid 1px black;
-	margin-top: 10px;
-	margin-bottom: 20px;
-	display: -webkit-inline-box;
-}
-.contact-left-col p {
-	margin-top: 20px;
-	font-size: 20px;
-}
-
-/*
-  ========================================
-  Buttons
-  ========================================
-*/
-
-/* 
-.btn {
-  border-radius: 10px;
-  display: inline-block;
-  margin-top: 0;
-  color: #00303f; /*text color cerulean blue*/
-/*   cursor: pointer; */
-/*   font-weight: 500; */
-/*   letter-spacing: .5px; */
-/*   text-transform: uppercase; */
-
-/* 
-}
-.btn-alt { 
-  padding: 15px 30px;
-  border: 1px solid #00303f; /*cerulean blue*/
-/* 
-}
- */
-/* 
-.btn-alt:hover {
-  background-color: #7a9d96; /*misty blue*/
-/*   color: #00303f; /*text color stays cerulean blue*/ */
-/*   border: 2px solid #00303f; /*border color stays cerulean blue*/ */
+/*   	padding: 10px 7px 10px 7px; */
+/*   	display: block; */
+/* }	 */
+/* .dropdown-content a:hover { */
+/* 	background-color: #7a9d96; /* misty blue */
+/* 	color: #00303f; /* keeps the links cerulean blue when hovered upon */
 /* } */
-/*  */
-/*  */
+/* .dropdown:hover .dropdown-content { */
+/*   	display: block; */
+/*   */
+/* } */

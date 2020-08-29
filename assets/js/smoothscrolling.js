@@ -15,6 +15,8 @@ $('a[href*="#"]')
       && 
       location.hostname == this.hostname
     ) {
+    
+    	var headerHeight = $(window).height(); // value in pixels
       // Figure out element to scroll to
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
@@ -23,7 +25,7 @@ $('a[href*="#"]')
         // Only prevent default if animation is actually gonna happen
         event.preventDefault();
         $('html, body').animate({
-          scrollTop: target.offset().top - 120 // minus 120 so that sticky header does not block title of target scrolled section
+          scrollTop: target.offset().top - headerHeight*0.2 //scroll enough so that sticky header does not block title of target scrolled section
         }, 900, function() {
           
           
