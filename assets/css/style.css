@@ -490,7 +490,7 @@ a.disable {
 }
 
 .modal1-images, .modal2-images, .modal3-images, .modal4-images, .modal5-images, .modal6-images, .modal7-images, 
-.modal8-images, .modal9-images {
+.modal8-images, .modal9-images, .modal10-images {
 	display: flex;
   	justify-content: center;
   	align-items: center;
@@ -498,17 +498,17 @@ a.disable {
   	margin-bottom: 2vw; /* how much space between end of box below and images */
 }
 
-.modal1-images img:last-child {
+.modal1-images img:last-child { /* social distancing sensor */
 	width: 18vw;
 	margin-left: 10vw; /* how much space between pics */
 }
 
-.modal2-images img:last-child {
+.modal2-images img:last-child { /* automatic salt spreader */
 	width: 20vw;
 	margin-left: 10vw; /* how much space between pics */
 }
 
-.modal3-images img:last-child {
+.modal3-images img:last-child { /* electronic combination lock */
 	width: 10vw;
 	margin-left: 10vw; /* how much space between pics */
 }

@@ -1,4 +1,4 @@
-### README.md for Namya Malik's Personal Website
+### Namya Malik's Personal Website
 ### Author: Namya Malik
 
 #### Domain Name
