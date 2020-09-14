@@ -1,7 +1,9 @@
-// this code was taken (and then slightly adapted) from https://css-tricks.com/snippets/jquery/smooth-scrolling/
-// after I watched a tutorial that referenced this website. I take no credit for this code.
-
-// SMOOTH SCROLLING
+/*
+ * smoothscrolling.js (uses jQuery)
+ * 
+ * This code was taken (and then slightly adapted) from https://css-tricks.com/snippets/jquery/smooth-scrolling/ after I watched a tutorial that referenced this website. I take no credit for this code.
+ *
+ */
 
 // Select all links with hashes
 $('a[href*="#"]')
@@ -27,17 +29,6 @@ $('a[href*="#"]')
         $('html, body').animate({
           scrollTop: target.offset().top - headerHeight*0.2 //scroll enough so that sticky header does not block title of target scrolled section
         }, 900, function() {
-          
-          
-          //  Callback after animation. Must change focus!
-//           var $target = $(target);
-//           $target.focus();
-//           if ($target.is(":focus")) { // Checking if the target was focused
-//             return false;
-//           } else {
-//             $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
-//             $target.focus(); // Set focus again
-//           };
         });
       }
     }

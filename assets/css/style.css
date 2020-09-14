@@ -362,8 +362,8 @@ a.disable {
 }
 
 .projects-section img {
-	width: 14vw;
-	height: 12vw;
+	width: 12vw;
+	height: 10vw;
 	border: 1px solid #00303f;
 	border-radius: 5px;
 }
@@ -376,8 +376,8 @@ a.disable {
 
 .overlay-container { /* overlay container covers a project teaser image */
 	position: relative;
-  	width: 14vw;
-	height: 12vw;
+  	width: 12vw;
+	height: 10vw;
   	margin: 2vw 8vw 0 2vw;
 }
 
@@ -387,7 +387,7 @@ a.disable {
   	bottom: 0;
   	left: 0;
   	right: 0;
-  	width: 14vw;
+  	width: 12vw;
   	height: 4vw;
   	background: rgba(0, 0, 0, 0.7); /* Black see-through */
   	color: #f1f1f1;
@@ -399,7 +399,7 @@ a.disable {
 }
 
 .overlay-caption-text { /* the caption on overlay */
-	font-size: 1vw;
+	font-size: 0.9vw;
   	font-weight: 300;
   	letter-spacing: .5px;
   	height: 3.5vw;
@@ -490,7 +490,7 @@ a.disable {
 }
 
 .modal1-images, .modal2-images, .modal3-images, .modal4-images, .modal5-images, .modal6-images, .modal7-images, 
-.modal8-images, .modal9-images, .modal10-images {
+.modal8-images, .modal9-images, .modal10-images, .modal11-images {
 	display: flex;
   	justify-content: center;
   	align-items: center;

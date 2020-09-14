@@ -1,4 +1,11 @@
-/** This code is based (but heavily modified) on a video tutorial: https://www.youtube.com/watch?v=90bURgQDNkY **/
+/*
+ * modal.js
+ *
+ * Author: Namya Malik
+ * 
+ * This code is based (but heavily modified) on a video tutorial: https://www.youtube.com/watch?v=90bURgQDNkY
+ *
+ */
 
 const projectsContainer = document.querySelector('.projects-section')
 
