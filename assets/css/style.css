@@ -161,7 +161,7 @@ p {
 	color: #00303f; /* cerulean blue */
 	font-size: 1.4vw;
 	font-weight: 300;
-  	line-height: 3vw; 	
+  	line-height: 2.2vw; 	
 }
 strong {
   font-weight: 400;
@@ -314,12 +314,23 @@ a.disable {
 	padding-right: 4vw;
 }
 
+.about-words ul { /* unordered list in this section has same properties as p */
+	color: #00303f; /* cerulean blue */
+	font-size: 1.4vw;
+	font-weight: 300;
+  	line-height: 2.2vw; 	
+}
+
+.about-words p + ul { /* remove space between paragraph and unordered list */
+    margin-top: -1.8vw;
+}
+
 .about-image {
 	width: 40%;
 }
 
 .about-image img {
-	margin-top: 3vw;
+	margin-top: 5vw;
 	max-width: 100%; /* responsive image */
 	height: auto; /* responsive image */
 }
