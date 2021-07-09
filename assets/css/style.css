@@ -1,53 +1,3 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;	
-}
-ol, ul {
-  	list-style: none;
-};
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
 /*
   ========================================
   Custom styles
@@ -55,7 +5,7 @@ table {
 */
 
 body {
-  	font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  	font: 300 16vw/22vw "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	background-color: #FFFFFF  /* white */
 }
 
@@ -65,21 +15,18 @@ body {
   ========================================
 */
 
-*,
-*:before,
-*:after {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-}
 .container {
   margin: 0 auto;
   max-width: 100%; /*changed from 960px to 100% */
-  padding-left: 3vw;
-  padding-right: 3vw;
-  position: relative;
-
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
+
+/* @media screen and (min-width: 800px) {
+	body {
+		background-color: lightgoldenrodyellow;
+	}
+} */
 
 /*
   ========================================
@@ -88,34 +35,14 @@ body {
 */
 
 .row-landscape { 	
-	margin-top: 8vw; /* so that sticky header does not overlap */
- 	padding: 0px 3vw 0vw 3vw;
-  	max-width: 100%;		
+	margin-top: 1rem; /* so that sticky header does not overlap */
+ 	padding: 0 1rem 0vw 1rem;		
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
   	align-items: center;
-  	flex-wrap: wrap; 
   	z-index: 1; /* so that primary-header has greater z-index of 2 and stays on top */
-}
-
-/*
-  ========================================
-  Clearfix
-  ========================================
-*/
-
-.group:before,
-.group:after {
-  content: "";
-  display: table;
-}
-.group:after {
-  clear: both;
-}
-.group {
-  clear: both;
-  *zoom: 1;
+	border: 0.1rem solid purple
 }
  		
 /*
@@ -124,29 +51,25 @@ body {
   ========================================
 */
 
-h0, h1, h2, h3, h5, p {
+h1, h2, h3, h5, p {
   	margin-bottom: 2vw;
 }
-h0 {
-	color: #00303f; /* cerulean blue */
-  	font-size: 5vw;
-  	line-height: 4.5vw;
-  	font-weight: 450;
-}
+
 h1 {
 	color: #00303f; /* cerulean blue */
   	font-size: 4.5vw;
   	line-height: 4.5vw;
   	font-weight: 400;
+	border: 0.1rem solid green
 }
 h2 {
   	font-size: 3vw;
   	line-height: 3.5vw;
-  	font-weight: 300px;
+  	font-weight: 300;
   	color: #dcae1d; /* honey yellow */
 }
 h3 {
-  	font-size: 24px;
+  	font-size: 2vw;
   	font-weight: 300;
   	line-height: 3vw;
   	color: #00303f; /* cerulean blue */
@@ -203,50 +126,121 @@ a.disable {
 */
 
 .primary-header {
-	background-color: #00303f; /*cerulean blue*/
-	border-bottom: 3px solid #7a9d96; /*misty blue*/;
-	padding-bottom: 0px;
-	margin-bottom: 0px;
-	position: fixed; /* so that header stays there while scrolling */
-	height: 5vw;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+
+	height: 3rem;
   	width: 100%; /* so that header stays there while scrolling */
+
+	background-color: #00303f; /*cerulean blue*/
+	border-bottom: 0.2rem solid #7a9d96; /*misty blue*/;
+	padding-bottom: 0;
+	margin-bottom: 0;
+	position: fixed; /* so that header stays there while scrolling */
   	top: 0; /* so that header stays there while scrolling */
   	z-index: 2; /* greater z-index shows up in front of other content */
 }
 
 .logo {
-  	border-top: 3px solid #7a9d96; /* misty blue */ 
-  	float: left;
-  	font-size: 2.3vw;		/* changed h1 properties */
+  	font-size: 1.3rem;	/* changed h1 properties */
   	font-weight: 300;		/* changed h1 properties */
-  	letter-spacing: 0.2vw;
+  	letter-spacing: 0.2rem;
   	text-transform: uppercase;
-  	display: inline;  	
+	margin-right: auto;
 }
 
-.primary-nav {
-  	font-size: 1.1vw;
-  	font-weight: 400;
-  	letter-spacing: 0.07vw;
-  	text-transform: uppercase;
-  	line-height: 5vw; /* vertically aligned in the middle of header */
-}	
+.icons ul {
+	/* display: flex;
+	flex-direction: row;
+	align-items: start;
+	justify-content: start;
 
-/*
-  ========================================
-  Navigation
-  ========================================
-*/
+	list-style: none;
+	max-height: 3rem;
+	width: 15rem;
 
-.nav {
-  	text-align: right;
+	font-size: 0.7rem;
+	font-weight: 400;
+	letter-spacing: 0.07rem;
+	text-transform: uppercase;
+	
+	padding: 0;
+	border: 0.1rem solid blue; */
+
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: start;
+	
+	max-height: 3rem;
+	width: 10rem;
+	margin-right: 4rem;
+
+	/* margin-left: auto; */
+	font-size: 0.7rem;
+	font-weight: 400;
+	letter-spacing: 0.07rem;
+	text-transform: uppercase;
+
+	padding: 0;
+	
+	list-style: none; /* get rid of bullet points for list items */
+	border: 0.1rem solid purple
 }
-.nav li {
-	display: inline-block;
-	margin: 0 1.3vw; /* top/bottom space and in-between space */
+
+.iconsli1 {
+	border: .1rem solid red;
 }
-.nav li:last-child {
-	margin-right: 0;
+
+.iconsli1 img {
+	height: 1rem;
+	width: 1rem;
+	border: 0.1rem solid purple;
+	margin: 0;
+}
+
+.iconsli2 {
+	border: .1rem solid red;
+}
+
+.iconsli2 img {
+	height: 1rem;
+	width: 1rem;
+	border: 0.1rem solid purple;
+	margin: 0;
+}
+
+.navbar ul {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: start;
+	
+	max-height: 3rem;
+	width: 10rem;
+	margin-right: 4rem;
+
+	/* margin-left: auto; */
+	font-size: 0.7rem;
+	font-weight: 400;
+	letter-spacing: 0.07rem;
+	text-transform: uppercase;
+
+	padding: 0;
+	
+	list-style: none; /* get rid of bullet points for list items */
+	border: 0.1rem solid purple
+}
+
+.navbarli1 {
+	border: .1rem solid blue;
+}
+
+.navbarli2 {
+	margin-left: .6rem;
+	border: .1rem solid blue;
 }
 
 /*
@@ -257,10 +251,11 @@ a.disable {
 
 .primary-footer {
 	background-color: #FFFFFF; /* white */
-  	padding-top: 6vw;
-  	padding-bottom: 1.9vw;
-  	font-size: 1.3vw;
+  	padding-top: 0.1rem;
+  	padding-bottom: 0.1rem;
+  	font-size: 0.7rem;
   	text-align: center;
+	border: 0.1rem solid red
 }
 .primary-footer small {
   	font-weight: 400;
@@ -273,27 +268,19 @@ a.disable {
 */
 
 .lead {
-	padding: 3.5vw 7vw 0vw 7vw; /* first number is top */
+	padding: 3.0vw 2vw 0 2vw; /* first number is top */
   	text-align: center;
+	border: 0.1rem solid green
 }
 
-.lead h0 {
-	padding-bottom: 0.9vw;
+.lead h1 {
+	padding-bottom: 0.1vw;
+	border: 0.1rem solid red
 }
 
 .lead h2 {
-	padding-bottom: 0.9vw;
-}
-
-.lead-icons img {
-	height: 3.2vw;
-	width: 3.0vw;
-	display: inline;
-	margin: 0 3.2vw 2vw 3.2vw; /* space between the icons */
-}
-
-.lead-icons img:hover { /* hover effect for social media icons */
-	transform: scale(1.1);
+	padding-bottom: 0.1vw;
+	border: 0.1rem solid red
 }
 
 /*
@@ -304,7 +291,7 @@ a.disable {
 
 .about-section {
 	display: flex;
-	padding: 0 8vw 0vw 2.5vw; /* top, right, bottom, left */
+	padding: 0 8vw 0 2.5vw; /* top, right, bottom, left */
 }
 
 .about-words {
@@ -343,7 +330,7 @@ a.disable {
 
 .projects-section {
 	display: flex;
-	padding: 0px 0px 0px 4.8vw;
+	padding: 0 0 0 4.8vw;
 }
 
 .projects-teasers {
@@ -375,8 +362,8 @@ a.disable {
 .projects-section img {
 	width: 12vw;
 	height: 10vw;
-	border: 1px solid #00303f;
-	border-radius: 5px;
+	border: 0.2vw solid #00303f;
+	border-radius: 2vw;
 }
 
 /*
@@ -394,7 +381,7 @@ a.disable {
 
 .overlay-mini {	/* mini overlay */
 	position: absolute;
-	border-radius: 5px;
+	border-radius: 2vw;
   	bottom: 0;
   	left: 0;
   	right: 0;
@@ -406,7 +393,7 @@ a.disable {
   	opacity: 0;
   	color: white; /* white text*/
   	text-align: center;
-  	z-index = 5;
+  	z-index: 5;
 }
 
 .overlay-caption-text { /* the caption on overlay */
