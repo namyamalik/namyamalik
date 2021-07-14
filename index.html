@@ -32,8 +32,7 @@
   			</ul>
 		</div>	
 	</header>	
-		
-			
+
 	<!-- LEAD -->	
 	<section id="lead" class="container row-landscape lead">
 		<h1>Hi, I'm Namya!</h1>	
@@ -95,38 +94,335 @@
 	<!-- PROJECTS -->		
 	<section id="projects" class="container row-landscape">
 		<h1>Projects</h1>				
-		<div class="container projects-section">
+		<div class="projects-section">
 				
-			<div class="projects-teasers">	
+			<!-- Row 1 -->
+			<div class="projects-teasers-row">	
 
-				<!-- Teaser 1 -->
+				<!-- Teaser -->
 				<section class="overlay-container">
-					<div class="overlay-mini overlay-caption-text">CloutChain</div>
-					<img src="assets/images/sensor_project.png" alt="social distancing sensor">
-				</section> <!-- / teaser 1-->
+					<div class="overlay"><h3>Smart-Home Management Device</h3> <p>Python | C | IoT | Security </p></div>
+					<img src="assets/images/smarthome_project.png" alt="smart home management device">
+				</section> <!-- / teaser -->
 
-				<!-- Teaser 2 -->
-				<section class="overlay-container">
-					<div class="overlay-mini overlay-caption-text">Mini Reliable Transport Layer</div>
-					<img src="assets/images/salt_project.png" alt="salt spreader">
-				</section> <!-- / teaser 2-->
+				<!-- Modal -->
+				<div class="modal">		
+					<div class="modal-section">
+						<div class="modal-words">
+							<h2>Smart-Home Management Device</h2>
+							<p>As part of my M.S. research, I am developing a device that acts as a router, 
+							keeps an inventory of home devices, & raises an alarm if an intruder is detected.</p>
+						</div>						
+						<div class="modal-images">
+							<img src="assets/images/rpi.png" alt="raspberry pi">
+						</div>
+					</div>	<!-- / modal section -->
 
-				<!-- Teaser 3 -->
+					<div class="modal-close-button">
+						<img src="assets/images/close_button.png" alt="close">
+					</div>
+				</div> <!-- / modal -->
+
+				<!-- Teaser -->
 				<section class="overlay-container">
-					<div class="overlay-mini overlay-caption-text">CloutChain</div>
-					<img src="assets/images/sensor_project.png" alt="social distancing sensor">
-				</section> <!-- / teaser 3-->
-	
-				<!-- Teaser 4 -->
+					<div class="overlay"><h3>CloutChain</h3> <p>Python | Blockchain | P2P Networks</p></div>
+					<img src="assets/images/cloutchain_project.png" alt="cloutchain">
+				</section> <!-- / teaser -->
+
+				<!-- Modal -->
+				<div class="modal">
+					<div class="modal-section">
+						<div class="modal-words">
+							<h2>CloutChain</h2>
+							<p>It can be hard to “prove” that an artist created/started a trend/meme on 
+								a certain date. For example, a meme artist might want to prove that they 
+								created a specific meme first.</p>
+							<p>CloutChain is a peer-to-peer blockchain network ledger (similar to Bitcoin) 
+								to verify creation and provide proof of authorship of memetic, 
+								timestamped digital assets.</p>
+						</div>						
+						<div class="modal-images">
+							<img src="assets/images/blockchain.png" alt="blockchain">
+						</div>
+					</div>	<!-- / modal section-->
+
+					<div class="modal-close-button">
+						<img src="assets/images/close_button.png" alt="close">
+					</div>
+				</div> <!-- / modal -->
+
+				<!-- Teaser -->
 				<section class="overlay-container">
-					<div class="overlay-mini overlay-caption-text">Mini Reliable Transport Layer</div>
-					<img src="assets/images/salt_project.png" alt="salt spreader">
-				</section> <!-- / teaser 4-->
-	
+					<div class="overlay"><h3>Mini Reliable Transport Layer</h3> <p>C | Network Protocols </p></div>
+					<img src="assets/images/mrt_project.png" alt="mrt">
+				</section> <!-- / teaser -->
+
+				<!-- Modal -->
+				<div class="modal">
+					<div class="modal-section">
+						<div class="modal-words">
+							<h2>Mini Reliable Transport Layer</h2>
+							<p> A reliable transport layer protocol (emulating TCP) built on top of UDP, 
+								which includes features such as fast transmission if high latency; data segmentation; 
+								and protection against packet loss, data corruption, & out-of-order packet delivery.</p>
+						</div>						
+						<div class="modal-images">
+							<img src="assets/images/mrt_project.png" alt="mrt">
+						</div>
+					</div>	<!-- / modal section -->
+
+					<div class="modal-close-button">
+						<img src="assets/images/close_button.png" alt="close">
+					</div>
+				</div> <!-- / modal -->
+				
+				<!-- Teaser -->
+				<section class="overlay-container">
+					<div class="overlay"><h3>Find Items App</h3> <p>Java | Android </p></div>
+					<img src="assets/images/android_project.png" alt="android">
+				</section> <!-- / teaser -->
+
+				<!-- Modal -->
+				<div class="modal">
+					<div class="modal-section">
+						<div class="modal-words">
+							<h2>Find Items App</h2>
+							<p>An Android application that allows users to save the location of 
+								commonly misplaced items (such as keys, wallet, etc.) in a SQL database by using text, 
+								voice and/or taking a picture.</p> 
+							<p>Leverages Google APIs such as Speech-to-Text and 
+								Object Recognition to build a user-friendly interface.</p>
+						</div>						
+						<div class="modal-images">
+							<img src="assets/images/android_project.png" alt="android">
+						</div>
+					</div>	<!-- / modal section -->
+
+					<div class="modal-close-button">
+						<img src="assets/images/close_button.png" alt="close">
+					</div>
+				</div> <!-- / modal -->
+
 			</div>
+
+			<!-- Row 2 -->
+			<div class="projects-teasers-row">				
+				<!-- Teaser -->
+				<section class="overlay-container">
+					<div class="overlay"><h3>Tiny Search Engine</h3> <p>C</p></div>
+					<img src="assets/images/tse_project.png" alt="tse">
+				</section> <!-- / teaser -->
+
+				<!-- Modal -->
+				<div class="modal">
+					<div class="modal-section">
+						<div class="modal-words">
+							<h2>Tiny Search Engine</h2>
+							<p>A small search engine that consists of three subsystems:
+							</br> 1) a crawler that crawls the web and retrieves webpages starting from a “seed” URL
+							</br> 2) an indexer that reads the document files produced by the crawler and builds 
+							an index of the number of occurrences of a word on a particular webpage
+							</br> 3) a querier that answers search queries and returns a list of webpages ranked by relevance.</p>
+						</div>						
+						<div class="modal-images">
+							<img src="assets/images/tse_project.png" alt="tse">
+						</div>
+					</div>	<!-- / modal section -->
+
+					<div class="modal-close-button">
+						<img src="assets/images/close_button.png" alt="close">
+					</div>
+				</div> <!-- / modal -->
+
+				<!-- Teaser -->
+				<section class="overlay-container">
+					<div class="overlay"><h3>Sudoku</h3> <p>C</p></div>
+					<img src="assets/images/sudoku_project.png" alt="sudoku">
+				</section> <!-- / teaser -->
+
+				<!-- Modal -->
+				<div class="modal">
+					<div class="modal-section">
+						<div class="modal-words">
+							<h2>Sudoku</h2>
+							<p>A sudoku program that consists of two subsystems:
+							</br> 1) a sudoku creator that creates a random sudoku puzzle with a unique solution
+							</br> 2) a sudoku solver that solves a given sudoku puzzle and outputs all the possible solutions</p> 
+						</div>						
+						<div class="modal-images">
+							<img src="assets/images/sudoku_project.png" alt="sudoku">
+						</div>
+					</div>	<!-- / modal section -->
+
+					<div class="modal-close-button">
+						<img src="assets/images/close_button.png" alt="close">
+					</div>
+				</div> <!-- / modal -->
+				
+				<!-- Teaser -->
+				<section class="overlay-container">
+					<div class="overlay"><h3>Hangman</h3> <p>C</p></div>
+					<img src="assets/images/hangman_project.png" alt="hangman">
+				</section> <!-- / teaser -->
+
+				<!-- Modal -->
+				<div class="modal">
+					<div class="modal-section">
+						<div class="modal-words">
+							<h2>Hangman</h2>
+							<p>Modeled after Hangman, the popular word-guessing game.</p> 
+							<p>Chooses a word randomly from a text file and then
+							allows the user to guess the word within a limited number of opportunities.</p>
+						</div>						
+						<div class="modal-images">
+							<img src="assets/images/hangman_project.png" alt="hangman">
+						</div>
+					</div>	<!-- / modal section -->
+
+					<div class="modal-close-button">
+						<img src="assets/images/close_button.png" alt="close">
+					</div>
+				</div> <!-- / modal -->
+
+				<!-- Teaser -->
+				<section class="overlay-container">
+					<div class="overlay"><h3>Docker Containers</h3> <p>Dockerfile | VNC </p></div>
+					<img src="assets/images/docker_project.png" alt="docker">
+				</section> <!-- / teaser -->
+
+				<!-- Modal -->
+				<div class="modal">
+					<div class="modal-section">
+						<div class="modal-words">
+							<h2>Docker Containers for Tiny OS & Contiki Cooja Simulator</h2>
+							<p>I wanted to learn about Docker so I built docker containers to install and run the following:
+							</br> 1) Tiny OS
+							</br> 2) Contiki Cooja Simulator: the Cooja Simulator is a GUI application which requires 
+							X11 support. My documentation provides functionality for machines with X11 support and machines
+							without X11 support (such as Macs).</p>
+						</div>						
+						<div class="modal-images">
+							<img src="assets/images/docker_project.png" alt="docker">
+						</div>
+					</div>	<!-- / modal section -->
+
+					<div class="modal-close-button">
+						<img src="assets/images/close_button.png" alt="close">
+					</div>
+				</div> <!-- / modal -->
+
+			</div>
+
+			<!-- Row 3 -->
+			<div class="projects-teasers-row">	
+				<!-- Teaser -->
+				<section class="overlay-container">
+					<div class="overlay"><h3>Automatic Salt Spreader</h3> <p>Arduino</p></div>
+					<img src="assets/images/salt_project.png" alt="salt spreader">
+				</section> <!-- / teaser -->
+
+				<!-- Modal -->
+				<div class="modal">
+					<div class="modal-section">
+						<div class="modal-words">
+							<h2>EZ Melter: Automatic Salt Spreader</h2>
+							<p>An automatic, rotating sprinkler device that emits salt onto non-drivable surfaces such as 
+								ramps and staircases to melt snow and ice.</p>
+							<p>An Arduino controls a servo motor to rotate the device and ensure that the salt is spread at a 
+								wide angle, a DC motor to spin the wheel, and a linear actuator 
+								to open/close a small door and regulate the flow of salt.</p> 
+						</div>						
+						<div class="modal-images">
+							<img src="assets/images/salt_project2.png" alt="salt_project">
+						</div>
+					</div>	<!-- / modal section -->
+
+					<div class="modal-close-button">
+						<img src="assets/images/close_button.png" alt="close">
+					</div>
+				</div> <!-- / modal -->
+
+				<!-- Teaser -->
+				<section class="overlay-container">
+					<div class="overlay"><h3>GNSS + IMU Inertial Navigation System</h3> <p>C | Microcontroller </p></div>
+					<img src="assets/images/gnss_imu.png" alt="gnss + imu">
+				</section> <!-- / teaser -->
+
+				<!-- Modal -->
+				<div class="modal">
+					<div class="modal-section">
+						<div class="modal-words">
+							<h2>GNSS + IMU Inertial Navigation System</h2>
+							<p>A system consisting of a microcontroller, GNSS chipset, & IMU sensor that produces accurate
+								location data while minimizing power-consumption.</p>
+						</div>						
+						<div class="modal-images">
+							<img src="assets/images/gnss_imu.png" alt="gnss + imu">
+						</div>
+					</div>	<!-- / modal section -->
+
+					<div class="modal-close-button">
+						<img src="assets/images/close_button.png" alt="close">
+					</div>
+				</div> <!-- / modal -->
+
+				<!-- Teaser -->
+				<section class="overlay-container">
+					<div class="overlay"><h3>Social Distancing Implementation System</h3> <p>C | Microcontroller </p></div>
+					<img src="assets/images/sensor_project.png" alt="social distancing sensor">
+				</section> <!-- / teaser -->
+
+				<!-- Modal -->
+				<div class="modal">
+					<div class="modal-section">
+						<div class="modal-words">
+							<h2>Social Distancing Implementation System</h2>
+							<p>A system consisting of devices that communicate with each other through both ultrasonic 
+								signals and radio frequency signals.</p>
+							<p>The devices are programmed with the use of microcontrollers so that when any 
+							two units come within six feet of each other, both units begin beeping to alert the users.</p>
+						</div>						
+						<div class="modal-images">
+							<img src="assets/images/sensor_schematic.png" alt="sensor_project">
+						</div>
+					</div>	<!-- / modal section -->
+
+					<div class="modal-close-button">
+						<img src="assets/images/close_button.png" alt="close">
+					</div>
+				</div> <!-- / modal -->
+
+				<!-- Teaser -->
+				<section class="overlay-container">
+					<div class="overlay"><h3>Electronic Combination Lock</h3> <p>VHDL | FPGA</p></div>
+					<img src="assets/images/lock_project.png" alt="electronic combinaton lock">
+				</section> <!-- / teaser -->
+
+				<!-- Modal -->
+				<div class="modal">
+					<div class="modal-section">
+						<div class="modal-words">
+							<h2>Electronic Combination Lock</h2>
+							<p>A lock, created with an FPGA board and programmed using VHDL, that compares a user’s 4-digit keypad 
+								input to a hardwired passcode.</p> 
+							<p>Contains features such as LED indicators and a temporary lock-out mode 
+								that engages after three consecutive failed input attempts.</p>
+						</div>						
+						<div class="modal-images">
+							<img src="assets/images/lock_pic.png" alt="lock">
+						</div>
+					</div>	<!-- / modal section -->
+
+					<div class="modal-close-button">
+						<img src="assets/images/close_button.png" alt="close">
+					</div>
+				</div> <!-- / modal -->
+			</div>
+
+			<!--crypto, heart rate monitor, truss bridge, stirling engine-->
+
 		</div>
 	</section>
-
 	
 	<!-- FOOTER -->
 	<footer class="container primary-footer">
